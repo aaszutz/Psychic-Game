@@ -55,9 +55,9 @@ document.onkeyup = function(event){
     
 
 
-$wins.textContent = "Wins: " + wins;
-$losses.textContent = "Losses: " + losses;
-$guessesLeft.textContent = "Guesses Left: " + guessesLeft;
-$guessedLetters.textContent = "Guesses So Far: " +guessedLetterBank;
+$wins.textContent = wins;
+$losses.textContent = losses;
+$guessesLeft.textContent = guessesLeft;
+$guessedLetters.textContent = guessedLetterBank;
 
 }
