@@ -6,7 +6,14 @@ var $guessesLeft = document.getElementById("guesses-left");
 var $wins = document.getElementById("wins");
 var $losses = document.getElementById("losses");
 
+const input = document.querySelector('input');
+const log = document.getElementById('log');
 
+input.addEventListener('keyup', logKey);
+
+function logKey(e) {
+  log.textContent += ` ${e.code}`;
+}
 
 
 
@@ -24,7 +31,6 @@ console.log(pickedLetter)
 
 //Start the game by clicking
 document.onkeyup = function(event){
-
 
     // user starts game
     var userGuess = event.key;
@@ -61,3 +67,4 @@ $guessesLeft.textContent = guessesLeft;
 $guessedLetters.textContent = guessedLetterBank;
 
 }
+
